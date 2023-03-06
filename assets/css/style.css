@@ -35,6 +35,10 @@ ul li a {
   justify-content: space-between;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .desktop {
   display: none;
 }
@@ -51,7 +55,28 @@ header {
   background-color: #0084fd;
 }
 
-/* MEDIA QUERY */
+/* MAIN */
+.features {
+  padding: 50px 0;
+}
+
+.features .col {
+  min-height: 300px; /* debug */
+  width: 100%;
+}
+
+
+
+/* RESPONSIVE */
+@media screen and (min-width: 680px) {
+  .features .col {
+    width: calc(100% / 3);
+  }
+
+  .features .col:first-child {
+    width: calc((100% / 3) * 2);
+  }
+}
 
 @media screen and (min-width: 769px) {
   .desktop {
