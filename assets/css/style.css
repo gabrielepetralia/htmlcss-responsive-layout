@@ -1,5 +1,64 @@
+/* GENERAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+.debug {
+  background-color: rgba(0, 255, 255, 0.3);
+  border: 1px solid black;
+  height: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.desktop {
+  display: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+header {
+  height: 80px;
+  background-color: #0084fd;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 769px) {
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
 }
